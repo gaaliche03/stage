@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".presentation.SignUpActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/white_rounded_background"
+        android:padding="24dp">
+
+        <!-- Logo -->
+    <ImageView
+    android:id="@+id/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/applogo"
+        android:layout_marginBottom="16dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/welcome"
+            android:textColor="@color/mauvelogo"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <!-- Description -->
+    <TextView
+    android:id="@+id/subtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title"
+    android:layout_centerHorizontal="true"
+    android:text="@string/description2"
+    android:textSize="14sp"
+    android:textColor="@color/mauve_clair"
+
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Username -->
+    <EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/subtitle"
+    android:hint="Username"
+    android:inputType="textPersonName"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background"
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Email -->
+    <EditText
+    android:id="@+id/email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/username"
+    android:hint="@string/email"
+    android:inputType="textEmailAddress"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background"
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Password -->
+    <EditText
+    android:id="@+id/password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/email"
+    android:hint="@string/pwd"
+    android:inputType="textPassword"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background"
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Confirm Password -->
+    <EditText
+    android:id="@+id/confirm_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/password"
+    android:hint="@string/confpwd"
+    android:inputType="textPassword"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background"
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Sign Up Button -->
+    <Button
+    android:id="@+id/sign"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/confirm_password"
+    android:text="@string/sign"
+    android:backgroundTint="@color/rosebuttom"
+    android:textColor="@color/white"
+    android:layout_marginBottom="16dp"/>
+
+        <!-- Log In Link -->
+    <TextView
+    android:id="@+id/have"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/sign"
+    android:layout_centerHorizontal="true"
+    android:text="@string/have"
+    android:textColor="@color/rosebuttom"
+    android:textSize="14sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
