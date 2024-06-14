@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".presentation.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rounded_background"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/applogo" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/welcome"
+            android:textColor="@color/mauvelogo"
+            android:textSize="20sp" />
+
+        <!-- description -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/description1"
+            android:textColor="@color/mauve_clair"
+
+            android:textSize="14sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtitle"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/pwd"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="24dp"
+            android:text="@string/forget"
+            android:textColor="@color/rosebuttom"
+            android:textSize="12sp" />
+
+        <!-- Log In Button -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgot_password"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rosebuttom"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <!-- Sign Up Link -->
+        <TextView
+            android:id="@+id/donthave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_centerHorizontal="true"
+            android:text="@string/donthave"
+            android:textColor="@color/rosebuttom"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

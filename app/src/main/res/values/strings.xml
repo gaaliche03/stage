@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">stage</string>
+    <string name="app_name">STAGEProject</string>
+    <string name="nameApp">PicTrove</string>
+    <string name="welcome">Welcome to PicTrove !</string>
+    <string name="description1">Enter your email address and your password to get access to your account</string>
+    <string name="email">E-mail</string>
+    <string name="pwd">Password</string>
+    <string name="login">LOG IN</string>
+    <string name="sign">SIGN UP</string>
+    <string name="donthave">Don\'\ t have an account? Sign up</string>
+    <string name="forget">Forget your password?</string>
+    <string name="description2">First create your account</string>
+    <string name="username">Username</string>
+    <string name="confpwd">Confirm Password</string>
+    <string name="have">Already have an account? Log in</string>
+    <string name="slogan">Explore. Capture. Inspire.</string>
+
 </resources>
